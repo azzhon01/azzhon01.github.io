@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+.main-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stories-section, .book-section {
+    margin-bottom: 30px;
+}
+
+.stories-section h2, .book-section h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.story-card, .book-card {
+    width: 120px;
+    height: 120px;
+    background-color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.story-card:hover, .book-card:hover {
+    background-color: #777;
+}
+
+.plus-icon {
+    font-size: 36px;
+    color: #333;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 15px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .story-card, .book-card {
+        width: 100px;
+        height: 100px;
+    }
+
+    .plus-icon {
+        font-size: 30px;
+    }
+}
